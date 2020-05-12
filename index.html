@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="app.js" charset="utf-8"></script>
-  <link rel=¨stylesheet¨ type=¨text/css¨ href=¨style.css¨>
+  <link rel="stylesheet" href="style.css"/>
   <title>All Star Reference</title>
 
 </head>
 <body>
+  <h1 id="pageTitle">All Star Reference</h1>
+
+<main class="searchDiv">
+<input type="search" id="searchBar" placeholder="SEARCH FOR A PLAYER">
+<button id="searchButton">Search</button>
+</main>
+<div class="results">
+  <h1 id=playerResultTitle>
+
+  </h1>
   <main class="playerBio"></main>
   <main class="playerStats"></main>
+  
+</div>
 </body>
 </html>
