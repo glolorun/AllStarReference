@@ -1,21 +1,55 @@
 
-const container = document.querySelector(`.container`)
+const playerBio = document.querySelector(`.playerBio`)
 const getInput = async (name) => {
-  const base_Url = `https://www.balldontlie.io/api/v1/players?search=${name}`;
+  const nameQuery = `https://www.balldontlie.io/api/v1/players?search=${name}`;
+  
+  // const statsQuery = 
   // const axios = require(`axios`).default;
   //This lets axios provide autocomplete
 
   try {
-    const response = await axios.get(`${base_Url}`);
+    const nameResponse = await axios.get(`${nameQuery}`);
     //Makes a request to the database
-    const data = response.data.data
-    for (i = 0; i < data.length; i++) {
-      // console.log(data[i].city)
-      const newDiv = document.createElement(`div`)
-      newDiv.innerText = `${data[i].first_name} ${data[i].last_name}`
-      container.appendChild(newDiv)
+
+
+    const nameData = nameResponse.data.data
+    for (i = 0; i < nameData.length; i++) {
+      const nameDiv = document.createElement(`div`)
+
+      nameDiv.innerText = `${nameData[i].first_name} ${nameData[i].last_name}. Position: ${nameData[i].position} Team: ${nameData[i].team.full_name}`
+      playerBio.appendChild(nameDiv)
+            const playerId = `${nameData[i].id}`
+            const statsQuery = `https://www.balldontlie.io/api/v1/season_averages?player_ids[]=${playerId}`
+            const statsResponse = await axios.get(`${statsQuery}`)
+        
+      const statData = statsResponse.data.data
+      //Trying to iterate stat Data inside of the name data because of scope rules but it just keeps looping forever. Asking for help.
+  for (i = 0; i < statData.length; i++) {
+    const statsDiv = document.createElement('div')
+    statsDiv.innerText = `${statData[i]}`
+    playerStats.appendChild(statsDiv)
+    console.log(statsResponse.data);
+        
+  }
+
+
     }
-    console.log(response.data.data);
+
+    // const statsQuery = `https://www.balldontlie.io/api/v1/season_averages?player_ids[]=${playerId}`
+    // const statsResponse = await axios.get(`${statsQuery}`)
+
+    // const statData = statsResponse.data.data
+    
+    // for (i = 0; i < statData.length; i++) {
+    //   const statsDiv = document.createElement('div')
+    //   statsDiv.innerText = `${statData[i]}`
+    //   playerStats.appendChild(statsDiv)
+    //   console.log(statsResponse.data);
+
+    // }
+    console.log(nameResponse.data.data);
+    // console.log(statsResponse.data);
+
   } catch (error) {
     // Handles errors
     console.log(error);

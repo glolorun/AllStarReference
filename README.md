@@ -1,94 +1,96 @@
 # Project Overview
+
 ## All-Star Reference
 
 ### Project Description
-All-Star Reference is a database displaying data teams, players and more from the National Basketball Association. Users can enter terms and have information like stats and biographies returned to them
+
+All-Star Reference is a database containing players from the National Basketball Association. Basketball fanatics can enter a name and have information and the current season's statistics returned to them.
 
 ### API
+
 https://www.balldontlie.io/api/v1/
 
 ### API Snippet
+
 {
-    "data": [
-        {
-            "id": 14,
-            "first_name": "Ike",
-            "height_feet": null,
-            "height_inches": null,
-            "last_name": "Anigbogu",
-            "position": "C",
-            "team": {
-                "id": 12,
-                "abbreviation": "IND",
-                "city": "Indiana",
-                "conference": "East",
-                "division": "Central",
-                "full_name": "Indiana Pacers",
-                "name": "Pacers"
-            },
-            "weight_pounds": null
-        },
+"data": [
+{
+"games_played": 60,
+"player_id": 237,
+"season": 2019,
+"min": "34:54",
+"fgm": 9.77,
+"fga": 19.6,
+"fg3m": 2.22,
+"fg3a": 6.35,
+"ftm": 3.98,
+"fta": 5.72,
+"oreb": 0.95,
+"dreb": 6.9,
+"reb": 7.85,
+"ast": 10.6,
+"stl": 1.23,
+"blk": 0.5,
+"turnover": 3.98,
+"pf": 1.77,
+"pts": 25.73,
+"fg_pct": 0.498,
+"fg3_pct": 0.349,
+"ft_pct": 0.697
+}
+]
 }
 
 ### Wireframes
-https://www.invisionapp.com/design-defined/wireframes/
+
+https://olutkareem236598.invisionapp.com/freehand/Olu-pWOcpElB7?v=8v7LZJseaJP6p1bFMSkokg%3D%3D&linkshare=urlcopied
 
 ### MVP
-* For trivia, 5 Questions will be displayed at random out of a possible 15;
-* Multiple choice answers
-* Scores will be tracked
-* Picture of athlete will be displayed with each answer
-* Display correct answer if user answers wrong
-*Option to choose game/answers on click
 
+- Users will input names of players in search bar
+- Upon clicking "Submit", results including the player's name, averages will display.
+- Successfully linked 2 API urls to display both name and season averages for the current year.
 
 ### Post-MVP
-* "Which Superstar are you?" Users will have the option take a personality test which will ultimately match them up with the NBA player that matches them best.
-* Personality test will display 5 questions with multiple choice answers
-* Sequence of answers will match up to a certain player as an end result
-* For Trivia: If answer is correct, play specific audio and do the same if answer is wrong
 
+- Add Local Storage
+- Personality test will display 5 questions with multiple choice answers
+- Sequence of answers will match up to a certain player as an end result
+- Option to return to homepage
 
 ## Goals
-|Day           |Task                                                                           |Progress    |
-|--------------|:-----------------------------------------------------------------------------:|-----------:|
-|Monday 5/11   |Approval; test API; Collect research materials;|In Progress |
-|Tuesday 5/12  |Design: Work out basic CSS and HTML stuctures; Wireframe; Collect Research     |In Progress |
-|Wednesday 5/13|Work on algorithms to randomize questions, etc for Trivia                      |In Progress |
-|Thursday 5/14 |Work on Additional styling, picture/sound display                              |In Progress |
-|Friday 5/15   |Tighten up Js; Work on anything incomplete                                     |In Progress |
-|Saturday 5/16 |Tighten up JS; Work on Post MVP                                                |In Progress |
-|Sunday 5/17   |Make final touches; Prepare to present                                         |In Progress |
-|Monday 5/18   |Present                                                                        |In Progress |
 
+| Day            |                                Task                                 |    Progress |
+| -------------- | :-----------------------------------------------------------------: | ----------: |
+| Monday 5/11    |           Approval; test API; Collect research materials;           | In Progress |
+| Tuesday 5/12   | Design: Work out basic CSS and HTML stuctures; JS; Collect Research | In Progress |
+| Wednesday 5/13 |            Work on algorithms to produce search results             | In Progress |
+| Thursday 5/14  |              Work on Additional styling, JS; Post MVP               | In Progress |
+| Friday 5/15    |       Tighten up Js; Work on Post MVP and anything incomplete       | In Progress |
+| Saturday 5/16  |                   Tighten up JS; Work on Post MVP                   | In Progress |
+| Sunday 5/17    |               Make final touches; Prepare to present                | In Progress |
+| Monday 5/18    |                               Present                               | In Progress |
 
 ### Priority Matrix
 
-
-
 ## Timeframes
-|Component                                                    |Priority        |Est. Time  |Time Invested |Actual Time |
-|----------------                                             |:--------------:|:---------:|:------------:|------------:
-|HTML Structure                                               |       M        |           |              |            |
-|CSS                                                          |       M        |           |              |            |
-|API to Display Random Questions and Randomize Answer Choices |       H        |           |              |            |
-|Record User Answers - Evalute Right/Wrong                    |       H        |           |              |            |
-|Keep Track of Score                                          |       M        |           |              |            |
-|Complete Game and Display Result                             |       H        |           |              |            |
-|Function to Reset Game                                       |       M        |           |              |            |
-|Post-MVP: Option to Play 2nd Game.                           |       H        |           |              |            |
-|Addition Styling: Display Pictures with Answers              |       M        |           |              |            |
-|Add Audio                                                    |       L        |           |              |            |
-|Total                                                        |       H        |           |              |            |
 
+| Component                                              | Priority | Est. Time | Time Invested | Actual Time |
+| ------------------------------------------------------ | :------: | :-------: | :-----------: | ----------: |
+| HTML Structure                                         |    M     |   4hrs    |               |             |
+| CSS                                                    |    M     |   6hrs    |               |             |
+| Program algorithm for to Display Player and Statistics |    H     |   15hrs   |               |             |
+| Post-MVP: Option to Play Personality Game.             |    M     |    8hr    |               |             |
+| Complete Game and Display Result                       |    M     |    4hr    |               |             |
+| Addition Styling: Display Pictures with Answers        |    M     |   3hrs    |               |             |
+| Total                                                  |    H     |  ~40hrs   |               |             |
 
 ## Code Snippet
-let questions = [
-{ question : "This player played in four different decades.",
-choice A: "Vince Carter",
-choice B: "Michael Jordan",
-Choice C: "Magic Johnson",
-Choice D: "Lebron James",
-Correct: "A"
-}]
+
+for (i = 0; i < nameData.length; i++) {
+const nameDiv = document.createElement(`div`)
+
+      nameDiv.innerText = `${nameData[i].first_name} ${nameData[i].last_name}. Position: ${nameData[i].position} Team: ${nameData[i].team.full_name}`
+      playerBio.appendChild(nameDiv)
+
 ## Change Log
