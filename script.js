@@ -1,8 +1,12 @@
 const playerBio = document.querySelector(`.playerBio`);
 const searchBar = document.querySelector(`#searchBar`);
 const searchButton = document.querySelector(`#searchButton`);
+// document.querySelector(`.results`).remove();
 
 const getInput = async (name) => {
+
+  
+
   const nameQuery = `https://www.balldontlie.io/api/v1/players?search=${name}`;
   const playerStats = document.querySelector(`.playerStats`);
   // const statsQuery =
@@ -46,7 +50,6 @@ const getInput = async (name) => {
       imgTag.src = imgQuery;
       playerBio.appendChild(imgTag);
       console.log(imgQuery);
-
       //Trying to iterate stat Data inside of the name data because of scope rules but it just keeps looping forever. Asking for help.
     // }
   } catch (error) {
@@ -61,6 +64,7 @@ const getInput = async (name) => {
 searchButton.addEventListener(`click`, () => {
   const name = searchBar.value;
   getInput(name);
+  // name.remove()
 });
 
 //NOTE: need to attach another axios for stats to the search query. EX: https://www.balldontlie.io/api/v1/season_averages?player_ids[]=237&seasons[]=2019

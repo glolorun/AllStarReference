@@ -64,13 +64,10 @@ https://olutkareem236598.invisionapp.com/freehand/Olu-pWOcpElB7?v=8v7LZJseaJP6p1
 | Day            |                                Task                                 |    Progress |
 | -------------- | :-----------------------------------------------------------------: | ----------: |
 | Monday 5/11    |           Approval; test API; Collect research materials;           | In Progress |
-| Tuesday 5/12   | Design: Work out basic CSS and HTML stuctures; JS; Collect Research | In Progress |
-| Wednesday 5/13 |            Work on algorithms to produce search results             | In Progress |
+| Tuesday 5/12   |            Work on algorithms to produce search results             | In Progress |
+|Wedensday 5/13  | Design: Work out basic CSS and HTML stuctures; JS; Collect Research | In Progress |
 | Thursday 5/14  |              Work on Additional styling, JS; Post MVP               | In Progress |
-| Friday 5/15    |       Tighten up Js; Work on Post MVP and anything incomplete       | In Progress |
-| Saturday 5/16  |                   Tighten up JS; Work on Post MVP                   | In Progress |
-| Sunday 5/17    |               Make final touches; Prepare to present                | In Progress |
-| Monday 5/18    |                               Present                               | In Progress |
+| Friday 5/15    |                               Present                               | In Progress |
 
 ### Priority Matrix
 

@@ -3,7 +3,7 @@ body {
   background-color;
 }
 
-h1 {
+#pageTitle {
   font-size: 80px;
   color: blue;
 }
