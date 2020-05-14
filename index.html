@@ -4,25 +4,122 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script defer src="script.js" charset="utf-8"></script>
   <link rel="stylesheet" href="style.css"/>
-  <title>All Star Reference</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+
+  <!-- <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Season');
+        data.addColumn('string', 'Team');
+        data.addColumn('string', 'Position');
+        data.addColumn('string', 'Games Played');
+        data.addColumn('string', 'Minutes Played');
+        data.addColumn('string', 'Field Goals Made');
+        data.addColumn('string', 'Field Goals Attempted');
+        data.addColumn('string', '3 Pointers Made');
+        data.addColumn('string', '3 Pointers Attempted');
+
+
+
+        data.addRows([
+          ['2019-2020',  {f: '$10,000'}],
+          ['Jim',   {f: '$8,000'}],
+          ['Alice', {f: '$12,500'}],
+          ['Bob',   {f: '$7,000'}],
+          ['Bob',   {f: '$7,000'}],
+          ['Bob',   {f: '$7,000'}],
+          ['Bob',   {f: '$7,000'}],
+          ['Bob',   {f: '$7,000'}],
+          ['Bob',   {f: '$7,000'}],
+        ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script> --> 
+  <title>All Star Reference. An NBA statistics site</title>
 
 </head>
-<body>
-  <h1 id="pageTitle">All Star Reference</h1>
+<style>
+body {
+  /* background-image: url('ServQuick.jpg'); */
+  background: linear-gradient(to right, #403b4a, #e7e9bb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-<main class="searchDiv">
-<input type="search" id="searchBar" placeholder="Player Name">
-<button id="searchButton">Search</button>
-</main>
-<div class="results">
-  <h1 id=playerResultTitle>
+}
+
+</style>
+<body>
+
+  <!-- <div id="background" style="background-image: url('ServQuick.jpg');"> -->
+  <div class="header">
+  <h1 id="pageTitle">  <img class="star" src="As-star.png" alt="all-star">  ALL-STAR REFERENCE  <img class="star" src="As-star.png" alt="all-star"
+    <main class="searchDiv">
+      <input type="search" id="searchBar" placeholder="Player Name">
+      
+      <button id="searchButton">Search</button>
+  </main>
 
   </h1>
+  </div>
+
+<!-- <main class="searchDiv">
+<input type="search" id="searchBar" placeholder="Player Name">
+
+<button id="searchButton">Search</button>
+</main> -->
+<!-- <div class="results"> -->
+  <h1 id="playerResultTitle">
+  </h1>
+  <h2 id="yearResult">
+
+  </h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <main class="playerBio"></main>
-  <main class="playerStats"></main>
-  
+  <main class="playerStats">
+    <!-- <div id="table_div"></div> -->
+<h2>Stats Table</h2>
+<div class="statsTable">
+
 </div>
+
+  </div>
+  </main>
+  
+<!-- </div> -->
 </body>
+<script defer src="script.js" charset="utf-8">
+
+
+
+
+
+
+
+
+
+
+  
+</script>
+
 </html>
