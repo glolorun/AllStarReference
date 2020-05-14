@@ -1,5 +1,7 @@
 body {
   text-align: left;
+  font-family: 'Open Sans', sans-serif;
+
 }
 
 #pageTitle {
@@ -12,25 +14,75 @@ body {
 }
 .header {
   padding: 10px;
-  text-align: left;
+/* float: left; */
+width: 100%;
+margin: 0 auto;
+padding: 0;
   background: #2E7AF2;
   color: white;
   font-size: 30px;
-  border-style: solid black;
-  border-width: medium;
+  border: 5px solid black !important;
+  border-width: medium !important;
 }
 
-img {
-  width: 2.5%;
+#star1 {
+  float: left;
+  display: inline;
+  width: 6.5%;
   height: auto;
 }
 
+#star2 {
+  float: right;
+  display: inline;
+  width: 6.5%;
+  height: auto;
+}
+
+.header h1 {
+  display: inline;
+  margin: 0px auto;
+  width: 100%;
+  float: center;
+
+}
 .playerStats {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.category {
   box-sizing: border-box;
   display: flex;
-  order: 5;
-  flex-shrink: 3;
-  justify-content: flex-start
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%; 
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid white;
+  background: fade(slategrey,20%);
+}
+
+.stat {
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%; 
+  padding: 0.8em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border: solid white;
+  background: fade(slategrey,20%);
+  /* > h1, > h2, > h3, > h4, > h5, > h6 { margin: 0; } */
+}
+#playerResultTitle {
+font-size: 50px;
+}
+#yearResult{
+  color: white;
 }
 .playerImage {
   height: auto;
@@ -44,6 +96,8 @@ img {
 
 #searchButton {
   float: right;
+  display: inline;
+
 }
 
 
@@ -57,4 +111,9 @@ float: right;
   /* height: 100px; */
   font-family: inherit;
   font-size: inherit;
+  display: inline;
+
 }
+/* .statsTable {
+  float: left;
+} */

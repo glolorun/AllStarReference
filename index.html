@@ -7,42 +7,6 @@
   <link rel="stylesheet" href="style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
 
-
-  <!-- <script type="text/javascript">
-      google.charts.load('current', {'packages':['table']});
-      google.charts.setOnLoadCallback(drawTable);
-
-      function drawTable() {
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Season');
-        data.addColumn('string', 'Team');
-        data.addColumn('string', 'Position');
-        data.addColumn('string', 'Games Played');
-        data.addColumn('string', 'Minutes Played');
-        data.addColumn('string', 'Field Goals Made');
-        data.addColumn('string', 'Field Goals Attempted');
-        data.addColumn('string', '3 Pointers Made');
-        data.addColumn('string', '3 Pointers Attempted');
-
-
-
-        data.addRows([
-          ['2019-2020',  {f: '$10,000'}],
-          ['Jim',   {f: '$8,000'}],
-          ['Alice', {f: '$12,500'}],
-          ['Bob',   {f: '$7,000'}],
-          ['Bob',   {f: '$7,000'}],
-          ['Bob',   {f: '$7,000'}],
-          ['Bob',   {f: '$7,000'}],
-          ['Bob',   {f: '$7,000'}],
-          ['Bob',   {f: '$7,000'}],
-        ]);
-
-        var table = new google.visualization.Table(document.getElementById('table_div'));
-
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
-      }
-    </script> --> 
   <title>All Star Reference. An NBA statistics site</title>
 
 </head>
@@ -58,14 +22,16 @@ body {
 
   <!-- <div id="background" style="background-image: url('ServQuick.jpg');"> -->
   <div class="header">
-  <h1 id="pageTitle">  <img class="star" src="As-star.png" alt="all-star">  ALL-STAR REFERENCE  <img class="star" src="As-star.png" alt="all-star"
+    <img id="star1" src="As-star.png" alt="all-star">
+  <h1 id="pageTitle">ALL-STAR REFERENCE</h1>  
     <main class="searchDiv">
       <input type="search" id="searchBar" placeholder="Player Name">
       
       <button id="searchButton">Search</button>
+      <img id="star2" src="As-star.png" alt="all-star">
+
   </main>
 
-  </h1>
   </div>
 
 <!-- <main class="searchDiv">
