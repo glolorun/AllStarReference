@@ -1,90 +1,92 @@
 body {
+  margin:0 auto;
+  padding:0;
 position: relative;
 padding-bottom: 3em;
 min-height: 100vh;
 text-align: left;
 font-family: 'Open Sans', sans-serif;
-width: 100vw;
+/* width: 97.5vw; */
+/* display:flex; */
+/* justify-content: center; */
+background: linear-gradient(
+        to right,
+        #296CD9,
+        #6DD5FA,
+        #FFFFFF)
+}
+#backgroundImage {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background: linear-gradient(
+    to right,
+    #296CD9,
+    #6DD5FA,
+    #FFFFFF)
+
 
 }
+
 
 #pageTitle {
-  font-size: 25px;
+  font-size: 50%;
   color: white;
   font-family: 'Open Sans', sans-serif;
-/* position: absolute; */
-/* background-color: #F2BD52; */
-
+  position: relative;
+  display: inline;
+  margin: 0 auto;
 }
 .header {
+  display:flex;
+  justify-content:space-between;
   top: 0;
   padding: 10px;
-/* float: left; */
 width: 100%;
-margin: 0 auto;
+/* margin: 0 auto; */
 padding: 0;
-  background: #2E7AF2;
-  /* color: white;
-  font-size: 30px; */
-  border: 5px solid black !important;
-  border-width: medium !important;
+  background: #296CD9;
+  border: .5px solid black !important;
 }
-
 #star1 {
-  position: relative;
-  float: left;
   display: inline;
-  width: 40px;
-  height: 40px;
+  width: 8%;
+  height: 8%;
 }
-
 #star2 {
-  position: relative;
-  float: right;
   display: inline;
-  width: 40px;
-  height: 40px;
+  width: 8%;
+  height: 8%;
 }
-
-.header h1 {
-  color: white;
-  font-size: 30%;
-  position: relative;
-  display: inline;
-  margin: 0px auto;
-  width: 100%;
-  float: center;
-
+.searchDiv{
+  display:flex;
 }
 .statsTable {
-  overflow-x:auto;
   flex: 2 2 20em;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
 }
-
 .category {
   font-family: 'Overpass', sans-serif;
   box-sizing: border-box;
   /* display: flex; */
   /* flex-grow: 1; */
   /* flex-shrink: 1; */
-  width: 100%; 
+  width: 100%;
   padding: 0.8em 1.2em;
   overflow: hidden;
   list-style: none;
   border: solid white;
   background: fade(slategrey,20%);
 }
-
 .stat {
   font-family: 'Audiowide', cursive;
   box-sizing: border-box;
   /* display: flex; */
   /* flex-grow: 1; */
   /* flex-shrink: 1; */
-  width: 100%; 
+  width: 100%;
   padding: 0.8em 1.2em;
   overflow: hidden;
   list-style: none;
@@ -100,44 +102,43 @@ font-family: 'Josefin Sans', sans-serif;
   color: white;
 }
 .playerImage {
-  height: auto;
-  border-radius: 50%;
   background-color: white;
-  width: 50%;
-  height: 80%
+  width:300px;
+  height:300px;
+  object-fit:cover;
 }
 
 #searchButton {
-  float: right;
-  display: flex;
-
-
+  background-color: #D97F3F; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* display: flex; */
 }
-
-
 #searchBar {
   padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
   /* float: left; */
-  background: #f1f1f1;
+  background: #F1F1F1;
   /* top: 50%;
   left: 50%;
   position: absolute; */
-  height: 35px;
-float: right;
+  height: 100%;
   /* -moz-box-sizing: border-box; */
   box-sizing: border-box;
-  width: 30%;
+  width: 70%;
   /* font-family: inherit;
   font-size: inherit;
-  /* display: flex; */ */
-
+  /* display: flex; */
 }
 /* .statsTable {
   float: left;
 } */
-
 footer {
   text-align: center;
   position: absolute;
