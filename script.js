@@ -36,9 +36,9 @@ const getInput = async (name) => {
       return Math.round(num * 10) / 10;
     }
     function percentage(num) {
-      return ((num) * 100) + '%'
+      return num * 100 + "%";
     }
-    
+
     // if (statData.length !== 0) {
     //   for (data in statData) {
     //       const statsDiv = document.createElement("div");
@@ -46,7 +46,7 @@ const getInput = async (name) => {
 
     // statsDiv.innerText = `${data}: ${statData[data]}`;
     const statsDiv = document.createElement("div");
-
+    statsDiv.classList.add("statsGrid");
     ////////////////////////////SEASON//////////////////////////////////////
     const seasonDiv = document.createElement("div");
     seasonDiv.classList.add(`category`);
@@ -56,7 +56,7 @@ const getInput = async (name) => {
     const seasonResultDiv = document.createElement("div");
     seasonResultDiv.classList.add(`stat`);
     const seasonResult = document.createElement(`strong`);
-    seasonResult.innerText = `${statData.season}-${statData.season += 1}`;
+    seasonResult.innerText = `${statData.season}-${(statData.season += 1)}`;
     seasonResultDiv.appendChild(seasonResult);
     statsDiv.appendChild(seasonDiv);
     statsDiv.appendChild(seasonResultDiv);
