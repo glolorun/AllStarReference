@@ -18,8 +18,6 @@ background: linear-gradient(
 #backgroundImage {
   background-position: center center;
   background-attachment: fixed;
-  width: 100%;
-  height: 100%;
   background-size: cover;
   background: linear-gradient(
     to right,

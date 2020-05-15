@@ -92,3 +92,6 @@ const nameDiv = document.createElement(`div`)
       playerBio.appendChild(nameDiv)
 
 ## Change Log
+* Couldn't get to Post MVP
+* Had to go by current season
+* Table needed to be vertical instead of horizontal
