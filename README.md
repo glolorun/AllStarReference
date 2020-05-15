@@ -9,6 +9,7 @@ All-Star Reference is a database containing players from the National Basketball
 ### API
 
 https://www.balldontlie.io/api/v1/
+https://nba-players.herokuapp.com/players/
 
 ### API Snippet
 

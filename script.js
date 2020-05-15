@@ -3,7 +3,6 @@ const searchBar = document.querySelector(`#searchBar`);
 const searchButton = document.querySelector(`#searchButton`);
 const playerStats = document.querySelector(`.playerStats`);
 
-// document.querySelector(`.results`).remove();
 
 const getInput = async (name) => {
   const nameQuery = `https://www.balldontlie.io/api/v1/players?search=${name}`;
@@ -19,12 +18,10 @@ const getInput = async (name) => {
     nameDiv.innerText = `Position: ${nameData[0].position} Team: ${nameData[0].team.full_name}`;
     playerBio.appendChild(nameDiv);
     const playerId = `${nameData[0].id}`;
-    // const playerTitleDiv = document.createElement(`div`)
     const playerResultTitle = document.querySelector(`#playerResultTitle`);
     playerResultTitle.innerText = `${nameData[0].first_name} ${nameData[0].last_name}`;
     yearResult.innerText = `2019-2020 Averages (Per Game)`;
-    // playerResultTitle.appendChild(playerTitleDiv)
-    // console.log(playerId)
+
 
     const statsQuery = `https://www.balldontlie.io/api/v1/season_averages?player_ids[]=${playerId}`;
 
@@ -39,12 +36,7 @@ const getInput = async (name) => {
       return num * 100 + "%";
     }
 
-    // if (statData.length !== 0) {
-    //   for (data in statData) {
-    //       const statsDiv = document.createElement("div");
-    //       statsDiv.innerHTML = `<div class='stat'>${data}: ${statData[data]}</div>`;
 
-    // statsDiv.innerText = `${data}: ${statData[data]}`;
     const statsDiv = document.createElement("div");
     statsDiv.classList.add("statsGrid");
     ////////////////////////////SEASON//////////////////////////////////////
@@ -332,7 +324,6 @@ const getInput = async (name) => {
   // }//executingSearch
 };
 // console.log(response)
-// let searchInput = prompt();
 
 searchButton.addEventListener(`click`, () => {
   playerBio.innerHTML = ``;
