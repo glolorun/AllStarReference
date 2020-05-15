@@ -63,11 +63,11 @@ https://olutkareem236598.invisionapp.com/freehand/Olu-pWOcpElB7?v=8v7LZJseaJP6p1
 
 | Day            |                                Task                                 |    Progress |
 | -------------- | :-----------------------------------------------------------------: | ----------: |
-| Monday 5/11    |           Approval; test API; Collect research materials;           | In Progress |
-| Tuesday 5/12   |            Work on algorithms to produce search results             | In Progress |
-|Wedensday 5/13  | Design: Work out basic CSS and HTML stuctures; JS; Collect Research | In Progress |
-| Thursday 5/14  |              Work on Additional styling, JS; Post MVP               | In Progress |
-| Friday 5/15    |                               Present                               | In Progress |
+| Monday 5/11    |           Approval; test API; Collect research materials;           | Complete |
+| Tuesday 5/12   |            Work on algorithms to produce search results             | Complete |
+|Wedensday 5/13  | Design: Work out basic CSS and HTML stuctures; JS; Collect Research | Complete |
+| Thursday 5/14  |              Work on Additional styling, JS; Post MVP               | Incomplete |
+| Friday 5/15    |                               Present                               | Complete |
 
 ### Priority Matrix
 
@@ -75,13 +75,13 @@ https://olutkareem236598.invisionapp.com/freehand/Olu-pWOcpElB7?v=8v7LZJseaJP6p1
 
 | Component                                              | Priority | Est. Time | Time Invested | Actual Time |
 | ------------------------------------------------------ | :------: | :-------: | :-----------: | ----------: |
-| HTML Structure                                         |    M     |   4hrs    |               |             |
-| CSS                                                    |    M     |   6hrs    |               |             |
-| Program algorithm for to Display Player and Statistics |    H     |   15hrs   |               |             |
-| Post-MVP: Option to Play Personality Game.             |    M     |    8hr    |               |             |
-| Complete Game and Display Result                       |    M     |    4hr    |               |             |
-| Addition Styling: Display Pictures with Answers        |    M     |   3hrs    |               |             |
-| Total                                                  |    H     |  ~40hrs   |               |             |
+| HTML Structure                                         |    M     |   4hrs    |    4           |             |
+| CSS                                                    |    M     |   6hrs    |     8          |             |
+| Program algorithm for to Display Player and Statistics |    H     |   15hrs   |     12          |             |
+| Post-MVP: Option to Play Personality Game.             |    M     |    8hr    |      0         |             |
+| Complete Game and Display Result                       |    M     |    4hr    |      0         |             |
+| Addition Styling: Display Pictures with Answers        |    M     |   3hrs    |      8         |             |
+| Total                                                  |    H     |  ~40hrs   |      32         |    32         |
 
 ## Code Snippet
 
