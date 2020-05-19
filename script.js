@@ -12,7 +12,6 @@ const getInput = async (name) => {
     //Makes a request to the database
     console.log(nameResponse);
     const nameData = nameResponse.data.data;
-    // for (i = 0; i < nameData.length; i++) {
     const nameDiv = document.createElement(`div`);
 
     nameDiv.innerText = `Position: ${nameData[0].position} Team: ${nameData[0].team.full_name}`;
@@ -52,7 +51,7 @@ const getInput = async (name) => {
     seasonResultDiv.appendChild(seasonResult);
     statsDiv.appendChild(seasonDiv);
     statsDiv.appendChild(seasonResultDiv);
-    // /////////////////////////GAMES PLAYED////////////////////////////////
+    ///////////////////////////GAMES PLAYED////////////////////////////////
 
     const gamesDiv = document.createElement("div");
     gamesDiv.classList.add(`category`);
@@ -66,7 +65,7 @@ const getInput = async (name) => {
     gamesResultDiv.appendChild(gamesResult);
     statsDiv.appendChild(gamesDiv);
     statsDiv.appendChild(gamesResultDiv);
-    // ////////////////////////////Minutes Played//////////////////////////////
+    //////////////////////////////Minutes Played///////////////////////////
     const minutesDiv = document.createElement("div");
     minutesDiv.classList.add(`category`);
     const minutes = document.createElement(`h3`);
@@ -79,7 +78,7 @@ const getInput = async (name) => {
     minutesResultDiv.appendChild(minutesResult);
     statsDiv.appendChild(minutesDiv);
     statsDiv.appendChild(minutesResultDiv);
-    // ////////////////////////////Points//////////////////////////////////////
+    //////////////////////////////Points//////////////////////////////////////
     const pointsDiv = document.createElement("div");
     pointsDiv.classList.add(`category`);
     const points = document.createElement(`h3`);
@@ -92,7 +91,7 @@ const getInput = async (name) => {
     pointsResultDiv.appendChild(pointsResult);
     statsDiv.appendChild(pointsDiv);
     statsDiv.appendChild(pointsResultDiv);
-    // ////////////////////////////Assists////////////////////////////////////
+    //////////////////////////////Assists////////////////////////////////////
     const assistsDiv = document.createElement("div");
     assistsDiv.classList.add(`category`);
     const assists = document.createElement(`h3`);
@@ -105,7 +104,7 @@ const getInput = async (name) => {
     assistsResultDiv.appendChild(assistsResult);
     statsDiv.appendChild(assistsDiv);
     statsDiv.appendChild(assistsResultDiv);
-    // ///////////////////////////D.Rebounds////////////////////////////////////
+    /////////////////////////////D.Rebounds////////////////////////////////////
     const dReboundsDiv = document.createElement("div");
     dReboundsDiv.classList.add(`category`);
     const dRebounds = document.createElement(`h3`);
@@ -118,7 +117,7 @@ const getInput = async (name) => {
     dReboundsResultDiv.appendChild(dReboundsResult);
     statsDiv.appendChild(dReboundsDiv);
     statsDiv.appendChild(dReboundsResultDiv);
-    // ///////////////////////////O.Rebounds////////////////////////////////////
+    /////////////////////////////O.Rebounds////////////////////////////////////
     const oReboundsDiv = document.createElement("div");
     oReboundsDiv.classList.add(`category`);
     const oRebounds = document.createElement(`h3`);
@@ -131,7 +130,7 @@ const getInput = async (name) => {
     oReboundsResultDiv.appendChild(oReboundsResult);
     statsDiv.appendChild(oReboundsDiv);
     statsDiv.appendChild(oReboundsResultDiv);
-    // ////////////////////////////Blocks//////////////////////////////////////
+    //////////////////////////////Blocks//////////////////////////////////////
     const blocksDiv = document.createElement("div");
     blocksDiv.classList.add(`category`);
     const blocks = document.createElement(`h3`);
@@ -144,7 +143,7 @@ const getInput = async (name) => {
     blocksResultDiv.appendChild(blocksResult);
     statsDiv.appendChild(blocksDiv);
     statsDiv.appendChild(blocksResultDiv);
-    // ////////////////////////////Steals//////////////////////////////////////
+    //////////////////////////////Steals//////////////////////////////////////
     const stealsDiv = document.createElement("div");
     stealsDiv.classList.add(`category`);
     const steals = document.createElement(`h3`);
@@ -157,7 +156,7 @@ const getInput = async (name) => {
     stealsResultDiv.appendChild(stealsResult);
     statsDiv.appendChild(stealsDiv);
     statsDiv.appendChild(stealsResultDiv);
-    // ////////////////////////////3 Pointers Made////////////////////////////
+    //////////////////////////////3 Pointers Made////////////////////////////
     const threeMDiv = document.createElement("div");
     threeMDiv.classList.add(`category`);
     const threeM = document.createElement(`h3`);
@@ -170,7 +169,7 @@ const getInput = async (name) => {
     threeMResultDiv.appendChild(threeMResult);
     statsDiv.appendChild(threeMDiv);
     statsDiv.appendChild(threeMResultDiv);
-    // ////////////////////////////3 Pointers Attempted////////////////////////
+    /////////////////////////////3 Pointers Attempted////////////////////////
     const threeAttDiv = document.createElement("div");
     threeAttDiv.classList.add(`category`);
     const threeAtt = document.createElement(`h3`);
@@ -183,7 +182,7 @@ const getInput = async (name) => {
     threeAttResultDiv.appendChild(threeAttResult);
     statsDiv.appendChild(threeAttDiv);
     statsDiv.appendChild(threeAttResultDiv);
-    // ////////////////////////////3pt Percentage//////////////////////////////
+    //////////////////////////////3pt Percentage//////////////////////////////
     const threePercentDiv = document.createElement("div");
     threePercentDiv.classList.add(`category`);
     const threePercent = document.createElement(`h3`);
@@ -197,7 +196,7 @@ const getInput = async (name) => {
     statsDiv.appendChild(threePercentDiv);
     statsDiv.appendChild(threePercentResultDiv);
 
-    // ////////////////////////////Field Goals Made/////////////////////////////
+    //////////////////////////////Field Goals Made/////////////////////////////
     const fGMDiv = document.createElement("div");
     fGMDiv.classList.add(`category`);
     const fGM = document.createElement(`h3`);
@@ -210,7 +209,7 @@ const getInput = async (name) => {
     fGMResultDiv.appendChild(fGMResult);
     statsDiv.appendChild(fGMDiv);
     statsDiv.appendChild(fGMResultDiv);
-    // ////////////////////////////Field Goal Attempts/////////////////////////////
+    //////////////////////////////Field Goal Attempts///////////////////////
     const fGADiv = document.createElement("div");
     fGADiv.classList.add(`category`);
     const fGA = document.createElement(`h3`);
@@ -223,7 +222,7 @@ const getInput = async (name) => {
     fGAResultDiv.appendChild(fGAResult);
     statsDiv.appendChild(fGADiv);
     statsDiv.appendChild(fGAResultDiv);
-    // ////////////////////////////Field Goal %/////////////////////////////
+    //////////////////////////////Field Goal %/////////////////////////////
     const fGPercentDiv = document.createElement("div");
     fGPercentDiv.classList.add(`category`);
     const fGPercent = document.createElement(`h3`);
@@ -236,7 +235,7 @@ const getInput = async (name) => {
     fGPercentResultDiv.appendChild(fGPercentResult);
     statsDiv.appendChild(fGPercentDiv);
     statsDiv.appendChild(fGPercentResultDiv);
-    // ////////////////////////////Free Throws Made/////////////////////////////
+    //////////////////////////////Free Throws Made////////////////////////
     const fTMDiv = document.createElement("div");
     fTMDiv.classList.add(`category`);
     const fTM = document.createElement(`h3`);
@@ -249,7 +248,7 @@ const getInput = async (name) => {
     fTMResultDiv.appendChild(fTMResult);
     statsDiv.appendChild(fTMDiv);
     statsDiv.appendChild(fTMResultDiv);
-    // ////////////////////////////Free Throws Attempted/////////////////////////////
+    //////////////////////////////Free Throws Attempted////////////////////
     const fTADiv = document.createElement("div");
     fTADiv.classList.add(`category`);
     const fTA = document.createElement(`h3`);
@@ -262,7 +261,7 @@ const getInput = async (name) => {
     fTAResultDiv.appendChild(fTAResult);
     statsDiv.appendChild(fTADiv);
     statsDiv.appendChild(fTAResultDiv);
-    // ////////////////////////////Free Throw %/////////////////////////////
+    //////////////////////////////Free Throw %/////////////////////////////
     const fTPercentDiv = document.createElement("div");
     fTPercentDiv.classList.add(`category`);
     const fTPercent = document.createElement(`h3`);
@@ -275,7 +274,7 @@ const getInput = async (name) => {
     fTPercentResultDiv.appendChild(fTPercentResult);
     statsDiv.appendChild(fTPercentDiv);
     statsDiv.appendChild(fTPercentResultDiv);
-    // ////////////////////////////Fouls/////////////////////////////////////////
+    //////////////////////////////Fouls/////////////////////////////////////////
     const foulsDiv = document.createElement("div");
     foulsDiv.classList.add(`category`);
     const fouls = document.createElement(`h3`);
@@ -288,7 +287,7 @@ const getInput = async (name) => {
     foulsResultDiv.appendChild(foulsResult);
     statsDiv.appendChild(foulsDiv);
     statsDiv.appendChild(foulsResultDiv);
-    // ////////////////////////////Turnovers/////////////////////////////////////
+    //////////////////////////////Turnovers/////////////////////////////////////
     const turnoverDiv = document.createElement("div");
     turnoverDiv.classList.add(`category`);
     const turnover = document.createElement(`h3`);
@@ -302,11 +301,8 @@ const getInput = async (name) => {
     statsDiv.appendChild(turnoverDiv);
     statsDiv.appendChild(turnoverResultDiv);
     /////////////////////////////////////////////////////////////////////////////
-    // statsDiv.classList.add(`statsCell`)
     playerStats.appendChild(statsDiv);
-    //   }
 
-    // }
     const imgQuery = `https://nba-players.herokuapp.com/players/${nameData[0].last_name}/${nameData[0].first_name}`;
     // const imgResponse = await axios.get(`${imgQuery}`);
     const imgTag = document.createElement(`img`);
@@ -321,7 +317,7 @@ const getInput = async (name) => {
     // Handles errors
     console.log(error);
   }
-  // }//executingSearch
+  //executingSearch
 };
 // console.log(response)
 
